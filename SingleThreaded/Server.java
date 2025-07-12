@@ -24,7 +24,7 @@ public class Server {
             toClient.close();
             fromClient.close();
             acceptedConnection.close();
-            socket.close();
+           socket.close();
            }
            catch(IOException ex){
             ex.printStackTrace();
@@ -33,7 +33,7 @@ public class Server {
         }
     }
 
-    public static void main(String[] args){
+    public static void main (String[] args){
         Server server = new Server();
         try{
             server.run();
